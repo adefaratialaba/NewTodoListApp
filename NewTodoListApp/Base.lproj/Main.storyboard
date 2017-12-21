@@ -52,22 +52,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter New Item" textAlignment="center" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Tlj-Pg-hOt">
-                                <rect key="frame" x="0.0" y="160" width="375" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add new Item" borderStyle="roundedRect" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Tlj-Pg-hOt">
+                                <rect key="frame" x="0.0" y="157" width="375" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdX-cO-iRd">
-                                <rect key="frame" x="0.0" y="269" width="375" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfk-BN-1dm">
+                                <rect key="frame" x="0.0" y="210" width="375" height="34"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="ADD"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Update"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oz-N6-9Fy">
+                                <rect key="frame" x="0.0" y="297" width="375" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Delete"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncD-Pv-pDS">
+                                <rect key="frame" x="0.0" y="252" width="375" height="34"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Cancel"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nfk-BN-1dm" firstAttribute="top" secondItem="Tlj-Pg-hOt" secondAttribute="bottom" constant="23" id="1UW-OG-sq0"/>
+                            <constraint firstItem="0oz-N6-9Fy" firstAttribute="top" secondItem="ncD-Pv-pDS" secondAttribute="bottom" constant="11" id="DHa-Pb-qey"/>
+                            <constraint firstItem="ij4-o6-wkr" firstAttribute="bottom" secondItem="0oz-N6-9Fy" secondAttribute="bottom" constant="447" id="ISO-Oa-ibA"/>
+                            <constraint firstItem="0oz-N6-9Fy" firstAttribute="leading" secondItem="ij4-o6-wkr" secondAttribute="leading" id="L69-sA-KgJ"/>
+                            <constraint firstItem="ncD-Pv-pDS" firstAttribute="top" secondItem="Nfk-BN-1dm" secondAttribute="bottom" constant="8" id="N6Y-YT-cYd"/>
+                            <constraint firstItem="ncD-Pv-pDS" firstAttribute="top" secondItem="Nfk-BN-1dm" secondAttribute="bottom" constant="8" id="TJN-kv-YCZ"/>
+                            <constraint firstItem="Tlj-Pg-hOt" firstAttribute="top" secondItem="ij4-o6-wkr" secondAttribute="top" constant="69" id="X99-hw-R6v"/>
+                            <constraint firstItem="0oz-N6-9Fy" firstAttribute="trailing" secondItem="ij4-o6-wkr" secondAttribute="trailing" id="iRd-pa-FEp"/>
+                            <constraint firstItem="Nfk-BN-1dm" firstAttribute="top" secondItem="Tlj-Pg-hOt" secondAttribute="bottom" constant="23" id="jme-Jw-2wH"/>
+                            <constraint firstItem="ncD-Pv-pDS" firstAttribute="trailing" secondItem="ij4-o6-wkr" secondAttribute="trailing" id="jtU-4o-pya"/>
+                            <constraint firstItem="Tlj-Pg-hOt" firstAttribute="trailing" secondItem="ij4-o6-wkr" secondAttribute="trailing" id="lTJ-w1-1gp"/>
+                            <constraint firstItem="ncD-Pv-pDS" firstAttribute="leading" secondItem="ij4-o6-wkr" secondAttribute="leading" id="sW2-AK-yYV"/>
+                            <constraint firstItem="Nfk-BN-1dm" firstAttribute="leading" secondItem="ij4-o6-wkr" secondAttribute="leading" id="ud1-xo-pAc"/>
+                            <constraint firstItem="Nfk-BN-1dm" firstAttribute="trailing" secondItem="ij4-o6-wkr" secondAttribute="trailing" id="w43-QM-fdl"/>
+                            <constraint firstItem="Tlj-Pg-hOt" firstAttribute="leading" secondItem="ij4-o6-wkr" secondAttribute="leading" id="z1p-7o-zgu"/>
+                            <constraint firstItem="0oz-N6-9Fy" firstAttribute="top" secondItem="ncD-Pv-pDS" secondAttribute="bottom" constant="11" id="zoK-rU-dHO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ij4-o6-wkr"/>
                     </view>
                 </viewController>
